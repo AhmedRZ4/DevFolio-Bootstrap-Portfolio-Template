@@ -1,0 +1,146 @@
+#home-animation::before{
+    content: "";
+    animation-name: rep;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+/* Designer Developer Freelancer Photographer */
+@keyframes rep{
+    0%{
+        content: "";
+    }
+    5%{
+        content: "Des";
+    }
+    10%{
+        content: "Desig";
+    }
+    15%{
+        content: "Designer";
+    }
+    25%{
+        content: "De";
+    }
+    30%{
+        content: "Deve";
+    }
+    35%{
+        content: "Develop";
+    }
+    40%{
+        content: "Developer";
+    }
+    45%{
+        content: "Devel";
+    }
+    50%{
+        content: "";
+    }
+    55%{
+        content: "Free";
+    }
+    60%{
+        content: "FreeLancer";
+    }
+    65%{
+        content: "Freela";
+    }
+    70%{
+        content: "Free";
+    }
+    75%{
+        content: "Fe";
+    }
+    80%{
+        content: "";
+    }
+    85%{
+        content: "Phot";
+    }
+    90%{
+        content: "Photographer";
+    }
+    95%{
+        content: "Photo";
+    }
+    100%{
+        content: "";
+    }
+}
+@media screen and (min-width:1024px) {
+    .nav-links-ul-pe > li {
+        position: relative;
+    }
+
+    .nav-links-ul-pe > li a {
+        position: relative;
+    }
+
+    .nav-links-ul-pe > [class="nav-item"] a::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        width: 0;
+        transition: width 0.3s ease;
+    }
+
+    .nav-links-ul-pe > [class="nav-item"] a:hover::after {
+        width: 70%;
+    }
+
+    .nav-links-ul-pe > [class="nav-item"] a.active::after {
+        width: 70%; 
+        background-color: white; 
+    }
+
+    .nav-links-ul-pe > [class="nav-item"] a.active {
+        color: white;
+    }
+}
+#nav-up{
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    color: red;
+
+}
+#spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeOut 2s forwards;
+  }
+  #main-content {
+    opacity: 0;
+    animation: fadeIn 2s forwards; 
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+

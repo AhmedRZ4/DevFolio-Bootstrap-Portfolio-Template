@@ -1,0 +1,139 @@
+html{
+    scroll-behavior: smooth;
+}
+:root {
+    --color-main: #0078ff
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    scroll-behavior: smooth;
+}
+
+#Home {
+    background-image: url(../img/hero-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .55);
+    background-blend-mode: overlay;
+}
+#navbar-tar{
+    opacity: 90%;
+}
+.nav-links-ul-pe li {
+    padding: 0 .5rem 0 0;
+
+    a {
+        color: white;
+
+    }
+
+    .nav-nested-ul li a,
+    .nav-inner-ul li a {
+        color: black;
+        text-transform: none;
+    }
+
+}
+.dropdown-submenu:hover .dropdown-menu,
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    text-decoration: none;
+}
+
+.nav-inner-ul li:hover>a {
+    background-color: transparent !important;
+    color: var(--color-main) !important;
+}
+
+.underline {
+    position: relative;
+}
+
+.underline::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border: 2px solid var(--color-main);
+    margin-top: .5rem;
+    width: 80%;
+}
+p.underline::before{
+    margin-top: 1rem;
+    left: 49%;
+    border-width: 3px;
+    width: 2.5rem;
+}
+h5.underline::before{
+    width: 95px;
+}
+.service-card .i-hover , .contact-i li .i-hover , #nav-up a{
+    transition: all .5s;
+}
+form button{
+    border: 5px solid white !important;
+    transition: all .5s;
+}
+.service-card:hover .i-hover , .contact-i li:hover .i-hover , #nav-up:hover a , form button:hover{
+border-color: #CDE1F8 !important;
+background-color: var(--color-main) !important;
+i{
+    color: white !important;
+}
+}
+.background-img{
+    background-image: url(../img/post-3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:  rgba(76, 156, 241,.96);
+    background-blend-mode: overlay;
+}
+#testimonials.background-img{
+    background-image: url(../img/overlay-bg.jpg);
+    background-color:  rgba(9, 89, 174, 0.96);
+}
+#Contact.background-img{
+    background-image: url(../img/overlay-bg.jpg);
+    background-color:  rgba(60, 143, 231, 0.96);
+}
+.work-hover  img {
+    transition: all 1s;
+}
+.work-hover:hover img{
+transform: scale(1.3);
+}
+.carousel-indicators .btn{
+width: 10px;
+height: 10px;
+border-radius: 50%;
+}
+.carousel-indicators .btn:active{
+color: transparent;
+}
+.blog-link , small span{
+    transition: all .5s;
+}
+.blog-link:hover , small span:hover{
+    color: var(--color-main) !important;
+}
+#Footer{
+    background-color: #0062D3;
+}
